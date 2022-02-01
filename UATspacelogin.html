@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--This page is the login for the UAT Space program!
+Mikesael Nieves  
+-->
+<html>
+
+<head>
+    <!--External files being linked to HTML file-->
+    <script src="login.js"> </script>
+    <link href="LOGIN.css" rel="stylesheet" type="text/css" />
+    <!--Tile of login page-->
+    <title>UAT Space Log In</title>
+
+</head>
+
+<body>
+    <!-- used to create an HTML form for user input-->
+    <form id="enterSubmit" onsubmit="return false">
+
+        <!--Header 1-->
+
+        <h1>UAT SPACE PROGRAM</h1>
+
+        <!--Contain all elements inside this box-->
+        <div class="box">
+            <!--Header 2-->
+            <h2>SIGN IN</h2>
+            <!--First box for first name-->
+            <input type="text" Placeholder="First Name" id="fName" />
+
+            <br>
+            <br>
+                <!--Placeholder holds whatever word or number that is in quotation inside the box-->
+            <input type="text" Placeholder="Last Name" id="lName" />
+
+            <br>
+            <br>
+<!--Box for badge id-->
+            <input type="number" placeholder="Badge Number" id="badgeID" />
+
+
+<!--Submit-->
+            <input type="submit" id="btn" onclick="verifyCreds();" />
+
+            <br>
+
+
+
+        </div>
+    </form>
+<!--What displays after pressing submit-->
+    <p id="loginStatus"></p>
+
+</body>
+
+</html>
